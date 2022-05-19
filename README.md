@@ -48,6 +48,12 @@ What does developing with [nixlua] feels like?
 
 Should just work :), report if not :P
 
+## Known Issues 
+
+- collision between lua version may happen as a result of installing nixlua based package. the
+  logic is mostly in ./buildLua.nix, if you have a solution open a pr.
+
+
 ## Overview
 
 - `pname`: Package name. this option will be concatenate with version to produce nix derivation name.
