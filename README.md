@@ -40,7 +40,7 @@ What does developing with [nixlua] feels like?
 
 ```nix
 {
-  inputs.nixlua.url = "github:tami5/nixlua";
+  inputs.nixlua.url = "github:kkharji/nixlua";
   outputs = { nixlua, ... }:@inputs
     nixlua.mkOutputs (pkgs: /* config */);
 }
@@ -82,7 +82,7 @@ Should just work :), report if not :P
 - `shell.luaEnv.cpath` a list of cpaths to be add to lua c search path. by default it includes `result/lib/lua/$version` and `result/lib`
 
 ## Wishlist
-- [ ] Expose nix template to be installed with `nix flake init -t github:tami5/nixlua`
+- [ ] Expose nix template to be installed with `nix flake init -t github:kkharji/nixlua`
 - [ ] Override main lua wrapper, e.g. current is `exec ${lua}/bin/lua "$@"`
 - [ ] Fix main `lua` alias in devshell not getting set to the `defaultVersion`
   rather just expose luaVersion.
